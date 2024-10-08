@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: feedback
-          image: "username/feedback:latest"
+          image: "seungju030/feedback:241008"
           ports:
             - containerPort: 8080
           readinessProbe:

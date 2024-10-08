@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: report
-          image: "username/report:latest"
+          image: "seungju030/report:241008"
           ports:
             - containerPort: 8080
           readinessProbe:
