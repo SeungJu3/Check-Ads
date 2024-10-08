@@ -72,6 +72,7 @@
                     { text: "managerId", value: "managerId" },
                     { text: "feedbackId", value: "feedbackId" },
                     { text: "reportId", value: "reportId" },
+                    { text: "userId", value: "userId" },
                 ],
             consulting : [],
             newValue: {},
@@ -94,6 +95,7 @@
                 'managerId': 0,
                 'feedbackId': 0,
                 'reportId': 0,
+                'userId': 0,
             }
         },
         methods: {

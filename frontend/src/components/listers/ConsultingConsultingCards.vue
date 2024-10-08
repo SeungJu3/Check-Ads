@@ -109,6 +109,7 @@
                 'managerId': 0,
                 'feedbackId': 0,
                 'reportId': 0,
+                'userId': 0,
             }
         },
         methods:{

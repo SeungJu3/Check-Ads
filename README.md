@@ -45,7 +45,7 @@ mvn spring-boot:run
 ```
 - consulting
 ```
- http :8088/consultings id="id" date="date" resId="resId" managerId="managerId" feedbackId="feedbackId" reportId="reportId" 
+ http :8088/consultings id="id" date="date" resId="resId" managerId="managerId" feedbackId="feedbackId" reportId="reportId" userId="userId" 
 ```
 - message
 ```
