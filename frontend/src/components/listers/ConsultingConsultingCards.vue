@@ -104,12 +104,11 @@
             me.values = temp.data._embedded.consultings;
             
             me.newValue = {
-                'date': '2024-10-08',
+                'date': '2024-10-09',
                 'resId': 0,
                 'managerId': 0,
                 'feedbackId': 0,
                 'reportId': 0,
-                'userId': 0,
             }
         },
         methods:{

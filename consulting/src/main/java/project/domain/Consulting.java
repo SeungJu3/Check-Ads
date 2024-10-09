@@ -30,8 +30,6 @@ public class Consulting {
 
     private Long reportId;
 
-    private Long userId;
-
     @PostPersist
     public void onPostPersist() {
         ConsultingCreated consultingCreated = new ConsultingCreated(this);

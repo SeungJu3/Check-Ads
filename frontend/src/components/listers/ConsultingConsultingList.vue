@@ -46,7 +46,6 @@
                             
                             
                             
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -56,7 +55,6 @@
                             [ ManagerId :  {{data.managerId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ FeedbackId :  {{data.feedbackId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ReportId :  {{data.reportId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ UserId :  {{data.userId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -124,12 +122,11 @@
             this.values = temp.data._embedded.consultings;
             
             this.newValue = {
-                'date': '2024-10-08',
+                'date': '2024-10-09',
                 'resId': 0,
                 'managerId': 0,
                 'feedbackId': 0,
                 'reportId': 0,
-                'userId': 0,
             }
         },
         methods: {

@@ -21,7 +21,6 @@
             <Number label="ManagerId" v-model="value.managerId" :editMode="editMode" :inputUI="''"/>
             <Number label="FeedbackId" v-model="value.feedbackId" :editMode="editMode" :inputUI="''"/>
             <Number label="ReportId" v-model="value.reportId" :editMode="editMode" :inputUI="''"/>
-            <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

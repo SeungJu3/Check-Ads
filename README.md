@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/153048693/storming/Check-Ads
+www.msaez.io/#/153048693/storming/Check-ADs
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -45,7 +45,7 @@ mvn spring-boot:run
 ```
 - consulting
 ```
- http :8088/consultings id="id" date="date" resId="resId" managerId="managerId" feedbackId="feedbackId" reportId="reportId" userId="userId" 
+ http :8088/consultings id="id" date="date" resId="resId" managerId="managerId" feedbackId="feedbackId" reportId="reportId" 
 ```
 - message
 ```

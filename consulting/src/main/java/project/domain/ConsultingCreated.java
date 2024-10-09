@@ -17,7 +17,6 @@ public class ConsultingCreated extends AbstractEvent {
     private Long managerId;
     private Long feedbackId;
     private Long reportId;
-    private Long userId;
 
     public ConsultingCreated(Consulting aggregate) {
         super(aggregate);
