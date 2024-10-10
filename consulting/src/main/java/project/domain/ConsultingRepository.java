@@ -25,4 +25,6 @@ public interface ConsultingRepository
         Long resId,
         Pageable pageable
     );
+
+    List<Consulting> findByUserId(Long userId);
 }

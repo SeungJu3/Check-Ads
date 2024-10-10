@@ -22,8 +22,6 @@
             <String label="Category" v-model="value.category" :editMode="editMode" :inputUI="''"/>
             <String label="SubCategory" v-model="value.subCategory" :editMode="editMode" :inputUI="''"/>
             <Date label="Date" v-model="value.date" :editMode="editMode" :inputUI="''"/>
-            <Boolean label="Status" v-model="value.status" :editMode="editMode" :inputUI="''"/>
-            <Number label="UserId" v-model="value.userId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

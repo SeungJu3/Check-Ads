@@ -1,10 +1,12 @@
 package project.domain;
 
+import java.time.LocalDate;
 import java.util.*;
 import lombok.*;
 import project.domain.*;
 import project.infra.AbstractEvent;
 
+//<<< DDD / Domain Event
 @Data
 @ToString
 public class ReservationCreated extends AbstractEvent {
@@ -18,4 +20,13 @@ public class ReservationCreated extends AbstractEvent {
     private Date date;
     private Boolean status;
     private Long userId;
+
+    public ReservationCreated(Consulting aggregate) {
+        super(aggregate);
+    }
+
+    public ReservationCreated() {
+        super();
+    }
 }
+//>>> DDD / Domain Event

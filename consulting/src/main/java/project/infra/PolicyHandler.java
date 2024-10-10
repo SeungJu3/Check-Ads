@@ -68,7 +68,7 @@ public class PolicyHandler {
         );
 
         // Sample Logic //
-        Consulting.assign(event);
+        // Consulting.assign(event);
     }
 }
 //>>> Clean Arch / Inbound Adaptor

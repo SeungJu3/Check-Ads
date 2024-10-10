@@ -25,7 +25,26 @@
         </v-card-text>
 
         <v-card-actions style="background-color: white;">
+            
+            <h4>Consulting Schedule</h4>
+            <br>
+            <v-list>
+                <v-list-item-group>
+                    <v-list-item v-for="consulting in consultings" :key="consulting.id">
+                        <v-list-item-content>
+                            <v-list-item-title>
+                                <strong>{{ consulting.date }}</strong>
+                            </v-list-item-title>
+                            <v-list-item-subtitle>
+                                Reservation ID: {{ consulting.resId }}
+                            </v-list-item-subtitle>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
+            </v-list>
+
             <v-spacer></v-spacer>
+
             <v-btn
                 color="primary"
                 text
@@ -94,15 +113,41 @@
             offline: Boolean,
         },
         data: () => ({
+            consultings: [
+                {
+                    'resId' : 0,
+                    'date' : "2024-10-10"
+                },
+                {
+                    'resId' : 1,
+                    'date' : "2024-10-11"
+                }
+            ],
             snackbar: {
                 status: false,
                 timeout: 5000,
                 text: '',
             },
         }),
+        mounted() {
+            this.fetchConsultings();
+        },
 	async created() {
         },
         methods: {
+            async fetchConsultings() {
+                try {
+                    const response = await axios.get("https://8088-seungju3-checkads-bejf89dkv3a.ws-us116.gitpod.io/api/consultings/user/0");
+                    this.consultings = response.data;
+                    console.log("Fetched consultings:", response.data);
+                } catch (error) {
+                    console.error("Error fetching consultings:", error);
+                    if (error.response) {
+                        console.error("Response data:", error.response.data);
+                        console.error("Response status:", error.response.status);
+                    }
+                }
+            },
             decode(value) {
                 return decodeURIComponent(value);
             },

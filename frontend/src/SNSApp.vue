@@ -42,7 +42,7 @@
                         color="primary"
                         style="font-weight:700;"
                     >
-                        User
+                        Members
                     </v-list-item>
 
 
@@ -54,46 +54,8 @@
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Reservation
+                        CheckList
                     </v-list-item>
-
-
-                    <v-list-item
-                        class="px-2"
-                        key="consultings"
-                        to="/consultings/consultings"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        Consulting
-                    </v-list-item>
-
-
-
-                    <v-list-item
-                        class="px-2"
-                        key="feedbacks"
-                        to="/feedbacks/feedbacks"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        Feedback
-                    </v-list-item>
-
-
-                    <v-list-item
-                        class="px-2"
-                        key="reports"
-                        to="/reports/reports"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        Report
-                    </v-list-item>
-
 
                 </v-list>
             </v-navigation-drawer>
@@ -174,40 +136,40 @@ export default {
         ImageUrl: '',
         aggregate: [
             { 
-                title: 'User', 
+                title: 'Members', 
                 description: '', 
                 key: 'users', 
                 route: '/users/users',
                 ImageUrl: '',
             },
             { 
-                title: 'Reservation', 
+                title: 'CheckList', 
                 description: '', 
                 key: 'reservations', 
                 route: '/reservations/reservations',
                 ImageUrl: '',
             },
-            { 
-                title: 'Consulting', 
-                description: '', 
-                key: 'consultings', 
-                route: '/consultings/consultings',
-                ImageUrl: '',
-            },
-            { 
-                title: 'Feedback', 
-                description: '', 
-                key: 'feedbacks', 
-                route: '/feedbacks/feedbacks',
-                ImageUrl: '',
-            },
-            { 
-                title: 'Report', 
-                description: '', 
-                key: 'reports', 
-                route: '/reports/reports',
-                ImageUrl: '',
-            },
+            // { 
+            //     title: 'Consulting', 
+            //     description: '', 
+            //     key: 'consultings', 
+            //     route: '/consultings/consultings',
+            //     ImageUrl: '',
+            // },
+            // { 
+            //     title: 'Feedback', 
+            //     description: '', 
+            //     key: 'feedbacks', 
+            //     route: '/feedbacks/feedbacks',
+            //     ImageUrl: '',
+            // },
+            // { 
+            //     title: 'Report', 
+            //     description: '', 
+            //     key: 'reports', 
+            //     route: '/reports/reports',
+            //     ImageUrl: '',
+            // },
             
         ],
     }),

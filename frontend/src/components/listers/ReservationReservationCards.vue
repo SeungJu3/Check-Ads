@@ -109,7 +109,7 @@
                 'prodCnt': 0,
                 'category': '',
                 'subCategory': '',
-                'date': '2024-10-08',
+                'date': '',
                 'status': false,
                 'userId': 0,
             }
