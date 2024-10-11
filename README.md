@@ -275,12 +275,15 @@ spec:
 ```
   
 - 프론트-API게이트웨이 연결
+  
   ![프론트-API게이트웨이 연결](https://github.com/user-attachments/assets/29fdc938-0da9-4541-9632-8a338bcde6e4)
 
 - Kubernetes에 생성된 Deploy. 확인
+  
   ![deploy](https://github.com/user-attachments/assets/ec70ca41-a999-4cfe-9f90-93ab0525ee53)
 
 - Service 및 엔드포인트 확인
+  
   ![svc](https://github.com/user-attachments/assets/70e294ec-bee4-4d27-8c2a-0c949669b506)
 
   
