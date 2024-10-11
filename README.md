@@ -276,7 +276,8 @@ spec:
   
 - 프론트-API게이트웨이 연결
   
-  ![프론트-API게이트웨이 연결](https://github.com/user-attachments/assets/29fdc938-0da9-4541-9632-8a338bcde6e4)
+  ![get all- final](https://github.com/user-attachments/assets/74ac1dac-7ef5-4099-822a-4330478a58ed)
+
 
 - Kubernetes에 생성된 Deploy. 확인
   
