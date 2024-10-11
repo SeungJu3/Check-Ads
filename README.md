@@ -29,6 +29,7 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 ### AS-IS TO-BE
 
 ![image](https://github.com/user-attachments/assets/bb5c279c-8ba0-44da-9efd-d6b4f58d0a96)
+
 "사람들 간의 소통으로 지연되는 컨설팅 진행 과정"
 
 컨설팅을 진행하였을때, 대부분의 소통이 영업대표와의 전화 또는 이메일로 이루어졌습니다. 때문에 빠른 일정을 잡고 싶은 고객과, 고객의 정보가 필요한 컨설턴트 사이의 소통이 지연되고는 했습니다.
@@ -42,7 +43,7 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 
 ### 요구사항 분석
 
-[요구사항 이미지]
+![image](https://github.com/user-attachments/assets/5dd96a31-5809-47f5-be17-24faef24159a)
 
 고객의 <U>일정이 지연되고 답답하다는 페인포인트</U>와, 컨설턴트의 <u>고객 관리의 효율화라는 요구사항</u>을 해결하고 위한 ChecK-Ads 서비스를 기획하였습니다.
 - 고객
@@ -82,12 +83,12 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
   1. 고객과 관리자는 히스토리 페이지에서 작성된 피드백 및 보고서를 조회할 수 있다.
 
 - <b>비기능적 요구사항</b>
-  1. 트랜잭션
+  - 트랜잭션
     - 컨설턴트가 배정되지 않거나 컨설턴트가 확정하지 않은 컨설틴은 진행될 수 없다.
-  1. 장애격리
+  - 장애격리
     - 메시지 전송 기능이 수행되지 않더라도 컨설팅 요청은 365일 24시간 받을 수 있어야 한다.
     - 예약시스템이 과중되면 고객의 요청을 잠시동안 받지 않고 잠시 후에 하도록 유도한다.
-  1. 성능
+  - 성능
     - 모든 컨설팅 요청에 대한 예약 및 컨설팅 진행 상태를 확인할 수 있어야 한다.
     - 컨설팅의 진행 상태가 바뀔 때마다 메시지로 알림을 줄 수 있어야 한다.
     - 피드백 및 보고서 작성 상태가 바뀔 때마다 스케줄러가 관리 상태를 확인할 수 있어야 한다.
@@ -132,7 +133,8 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 
 ### 분석/설계
 
-![image](https://github.com/user-attachments/assets/d705bf92-f52e-4e26-b224-27ca173e38f0)
+![image](https://github.com/user-attachments/assets/aced1f72-a735-420a-8a35-c50ea6f98b5a)
+
 ![image](https://github.com/user-attachments/assets/0499f047-4f3a-45da-a002-cab69a76071e)
 
 
@@ -274,6 +276,30 @@ spec:
   
 - 프론트-API게이트웨이 연결
 ![프론트-API게이트웨이 연결](https://github.com/user-attachments/assets/718c4bb1-c0c4-48ec-bdde-fd320d1f7283)
+
+## UI 화면 
+
+### 메인화면
+
+![image](https://github.com/user-attachments/assets/ec5c8817-03a0-4d25-a96f-7327f13d484c)
+
+### 알림 기능 
+
+![image](https://github.com/user-attachments/assets/58196233-4139-44c3-8f70-90624f18663f)
+
+### 고객 화면 
+
+![image](https://github.com/user-attachments/assets/56081849-4e97-41bd-85e0-aef6292fc575)
+
+### 관리자 화면 
+
+![image](https://github.com/user-attachments/assets/18f60c0c-cf00-49d0-9e53-b4efe40bc0fc)
+
+![image](https://github.com/user-attachments/assets/d8a805e5-2150-44b3-b0f5-ec0ff39b1647)
+
+### 보고서 작성 및 피드백 작성 화면
+
+![image](https://github.com/user-attachments/assets/624542db-2958-46fe-9a02-0d242c2f1f4f)
 
 
 ## 기대효과
