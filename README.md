@@ -1,17 +1,15 @@
-# 
-
-## Model
-[www.msaez.io/#/153048693/storming/Check-Ads](https://www.msaez.io/#/57468957/storming/project-final)
 # ChecK-Ads
 
 ![image](https://github.com/user-attachments/assets/3b029b92-a9c1-450f-b830-571b694e430d)
-
 
 고객에게는 신속한 컨설팅을,    
 컨설턴트에게는 손쉬운 고객관리를 제공하는   
 
 K-Ads 컨설팅 통합 관리 플랫폼 "ChecK-Ads"
 
+
+## Model
+[www.msaez.io/#/153048693/storming/Check-Ads](https://www.msaez.io/#/57468957/storming/project-final)
 
 ## 1. 서비스 기획
 
