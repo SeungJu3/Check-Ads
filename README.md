@@ -1,108 +1,11 @@
 # 
 
 ## Model
-www.msaez.io/#/153048693/storming/Check-Ads
-
-## Before Running Services
-### Make sure there is a Kafka server running
-```
-cd kafka
-docker-compose up
-```
-- Check the Kafka messages:
-```
-cd infra
-docker-compose exec -it kafka /bin/bash
-cd /bin
-./kafka-console-consumer --bootstrap-server localhost:9092 --topic
-```
-
-## Run the backend micro-services
-See the README.md files inside the each microservices directory:
-
-- user
-- reservation
-- consulting
-- message
-- feedback
-- report
-
-
-## Run API Gateway (Spring Gateway)
-```
-cd gateway
-mvn spring-boot:run
-```
-
-## Test by API
-- user
-```
- http :8088/users id="id" name="name" field="field" compName="compName" compNo="compNo" compTel="compTel" compAddr="compAddr" 
-```
-- reservation
-```
- http :8088/reservations id="id" request="request" product="product" prodCnt="prodCnt" category="category" subCategory="subCategory" date="date" status="status" userId="userId" 
-```
-- consulting
-```
- http :8088/consultings id="id" date="date" resId="resId" managerId="managerId" feedbackId="feedbackId" reportId="reportId" userId="userId" 
-```
-- message
-```
-```
-- feedback
-```
- http :8088/feedbacks id="id" constId="constId" content="content" userId="userId" 
-```
-- report
-```
- http :8088/reports id="id" constId="constId" content="content" managerId="managerId" 
-```
-
-
-## Run the frontend
-```
-cd frontend
-npm i
-npm run serve
-```
-
-## Test by UI
-Open a browser to localhost:8088
-
-## Required Utilities
-
-- httpie (alternative for curl / POSTMAN) and network utils
-```
-sudo apt-get update
-sudo apt-get install net-tools
-sudo apt install iputils-ping
-pip install httpie
-```
-
-- kubernetes utilities (kubectl)
-```
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-```
-
-- aws cli (aws)
-```
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-```
-
-- eksctl 
-```
-curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-sudo mv /tmp/eksctl /usr/local/bin
-```
-
----
+[www.msaez.io/#/153048693/storming/Check-Ads](https://www.msaez.io/#/57468957/storming/project-final)
 # ChecK-Ads
 
-[ChecK-Ads 이미지]
+![image](https://github.com/user-attachments/assets/3b029b92-a9c1-450f-b830-571b694e430d)
+
 
 고객에게는 신속한 컨설팅을,    
 컨설턴트에게는 손쉬운 고객관리를 제공하는   
@@ -114,7 +17,7 @@ K-Ads 컨설팅 통합 관리 플랫폼 "ChecK-Ads"
 
 ### 1-1. K-Ads란
 
-[k-ads 이미지]
+![image](https://enterprise.kt.com/entpf/images/product/webResource/P_PD_AI_BD_004_wide-banner_m.jpg)
 
 "잠재고객을 진짜 고객으로!"   
 
@@ -128,11 +31,13 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 
 ### 1-2. AS-IS TO-BE
 
-[AS-IS 이미지]
+![image](https://github.com/user-attachments/assets/bb5c279c-8ba0-44da-9efd-d6b4f58d0a96)
+
 
 사람들 간의 소통으로 지연되는 컨설팅 진행 과정을,   
 
-[TO-BE 이미지] 
+![image](https://github.com/user-attachments/assets/fd09eef2-99d0-47d1-b8f6-0e8fe3544169)
+
 
 <b>ChecK-Ads</b>를 통해 고객과 컨설턴트의 원활한 의사소통을 도울 것입니다.
 
@@ -146,7 +51,7 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 
 ### 2-2. 기능 명세서
 
-[기능명세서 이미지]
+![image](https://github.com/user-attachments/assets/c10bda1f-a452-455b-a265-9d9d8dd5beb6)
 
 고객과 컨설턴트의 요구사항을 고려하여, 크게 고객/일정/관리자 페이지를 구성하였습니다.
 
@@ -154,7 +59,7 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 
 ### 2-3. 서비스 시나리오
 
-[서비스 시나리오 이미지]
+![image](https://github.com/user-attachments/assets/368fd1f4-2ad7-4351-aa14-8dd2548e677c)
 
 서비스 시나리오는 다음과 같습니다.
 
@@ -208,7 +113,9 @@ kt가 보유한 방대한 통신 Big Data 기반으로,
 
 ### 3-1. 분석/설계
 
-[as-is to-be 이미지]
+![image](https://github.com/user-attachments/assets/d705bf92-f52e-4e26-b224-27ca173e38f0)
+![image](https://github.com/user-attachments/assets/0499f047-4f3a-45da-a002-cab69a76071e)
+
 
 MSA로 설계하여 기존의 직무 중심의 팀에서 서비스 중심의 팀으로 구조화하여 보다 독립적으로 서비스를 구현할 수 있습니다.
 
@@ -216,29 +123,31 @@ MSA로 설계하여 기존의 직무 중심의 팀에서 서비스 중심의 팀
 
 #### 1) 이벤트 도출
 
-[이벤트 나열]
+![image](https://github.com/user-attachments/assets/5dd7154b-231b-4878-925d-a7c18e898c39)
 
 서비스 시나리오를 기반으로 1차적으로 이벤트를 도출하여 나열하였습니다.
 
-[부적격 이벤트 탈락]
+![image](https://github.com/user-attachments/assets/e7ffdb3b-78c1-4f70-8c60-8fae8df9fee4)
 
 이후 서비스의 목적에 부합하지 않은 부적격 이벤트를 탈락하여 이벤트를 구성하였습니다.
 
 #### 2) 초기 모형 완성
 
-[1차 모형 완성]
+![image](https://github.com/user-attachments/assets/a3580447-28cc-438f-b012-046c600d7dea)
+
 
 Actor와 Command, Aggregate 등을 함께 배치한 후, Bounded Context로 묶어 트랜잭션이 유지되어야 하는 단위로 구분하였습니다.
 
 #### 3) 컨택스트 매핑
 
-[컨택스트 매핑]
+![image](https://github.com/user-attachments/assets/a3bc4cbc-1a67-42af-a949-b516c3304d7b)
 
 초기 모형에서 서비스가 독립적으로 분리되지 않은 부분을 보완하여 재매핑하였습니다.
 
 #### 4) 요구사항 검증
 
-[요구사항 검증]
+![image](https://github.com/user-attachments/assets/746dd99c-e63f-4fdd-bc0e-254447ecb639)
+
 
 시나리오 기반으로 요구사항을 검증하며 개선된 모형을 최종 검증하였습니다.
 
@@ -246,13 +155,17 @@ Actor와 Command, Aggregate 등을 함께 배치한 후, Bounded Context로 묶�
 
 #### 5) 연결성 수정
 
-[연결성 수정 이미지]
+![image](https://github.com/user-attachments/assets/4c4c394d-a788-4714-9824-33302dc7b24f)
+
 
 consulting과 feedback/report aggregate 간의 연결성을 보완하기 위해, 컨설팅이 생성되면 상태 변경이라는 policy가 동작하여 연결되도록 수정하였습니다.
 
 #### 6) 스케줄러 추가
 
-[스케줄러 추가 이미지]
+![image](https://github.com/user-attachments/assets/ac72636b-0614-4d17-afcb-d934d149affe)
+
 
 피드백과 보고서가 작성되지 않는 경우, 알림을 통해 각각 고객과 컨설턴트에게 요청하기 위해 상태를 관리하는 스케줄러를 추가하였습니다.
 
+## 3. 기대효과
+![image](https://github.com/user-attachments/assets/790f339b-2937-45b5-a832-a124a08654a2)
